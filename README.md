@@ -1,5 +1,7 @@
 # Desmin filaments extend along actin filaments within the mouse skeletal muscle sarcomere
 
+[![DOI](https://zenodo.org/badge/1392397862.svg)](https://zenodo.org/badge/latestdoi/1392397862)
+
 This repository contains code accompanying the study described below.
 
 **Publication status:** Accepted for publication in *Nature Communications* (2026).
