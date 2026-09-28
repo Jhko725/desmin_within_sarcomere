@@ -1,0 +1,7 @@
+/data
+/figures
+__pycache__/
+*.pyc
+.vscode/
+.pytest_cache
+/source_data
