@@ -13,6 +13,7 @@ Render once, then call compose_upper_row repeatedly to adjust the layout:
 
 Requirements: numpy, matplotlib, pyvista, and a working VTK rendering backend.
 """
+
 from dataclasses import dataclass
 
 import matplotlib as mpl
@@ -126,7 +127,7 @@ def compose_overlays(
     rendered,
     *,
     titles=tuple[str, str, str],
-    roi:tuple[float, float, float, float]|None=None,
+    roi: tuple[float, float, float, float] | None = None,
     panel_height=2.6,
     panel_gap=0.25,
     xlabel_fontsize=14,

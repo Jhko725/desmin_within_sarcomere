@@ -45,11 +45,13 @@ def save_panel(
 
     outputs = []
     try:
-        with mpl.rc_context({
-            "svg.fonttype": svg_fonttype,
-            "pdf.fonttype": 42,
-            "savefig.bbox": None,
-        }):
+        with mpl.rc_context(
+            {
+                "svg.fonttype": svg_fonttype,
+                "pdf.fonttype": 42,
+                "savefig.bbox": None,
+            }
+        ):
             for extension in formats:
                 path = stem.parent / f"{stem.name}.{extension}"
                 fig.savefig(
@@ -58,7 +60,7 @@ def save_panel(
                     facecolor=fig.get_facecolor(),
                     transparent=False,
                     bbox_inches=crop,  # The SAME explicit box in every format.
-                    pad_inches=0,     # Padding is already included in crop.
+                    pad_inches=0,  # Padding is already included in crop.
                 )
                 outputs.append(path)
     finally:
